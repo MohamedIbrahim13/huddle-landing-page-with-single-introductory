@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  background: url("../images/bg-desktop.svg") no-repeat #674baf;
+  background-attachment: fixed;
+  background-size: auto 100vh;
+}
+@media screen and (max-width: 576px) {
+  body {
+    background: url("../images/bg-mobile.svg") no-repeat #674baf;
+  }
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.container .brand {
+  padding-top: 35px;
+}
+.container .brand img {
+  height: 35px;
+  width: 165px;
+}
+
+main {
+  display: flex;
+  width: 100%;
+}
+@media screen and (max-width: 576px) {
+  main {
+    flex-direction: column;
+  }
+}
+main .left {
+  width: 53%;
+  display: flex;
+  align-items: center;
+  padding-top: 75px;
+}
+@media screen and (max-width: 576px) {
+  main .left {
+    width: 100%;
+    padding-top: 45px;
+  }
+}
+main .left img {
+  width: 90%;
+}
+@media screen and (max-width: 576px) {
+  main .left img {
+    width: 100%;
+  }
+}
+main .right {
+  width: 47%;
+  padding-top: 95px;
+}
+@media screen and (max-width: 576px) {
+  main .right {
+    width: 100%;
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+h1,
+p {
+  color: white;
+}
+@media screen and (max-width: 576px) {
+  h1,
+p {
+    text-align: center;
+  }
+}
+
+.right h1:first-of-type {
+  margin-bottom: 0;
+}
+
+.right h1:last-of-type {
+  margin-top: 7px;
+}
+
+h1 {
+  font-size: "Poppins", sans-serif;
+  font-size: 1.65em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 0.85em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 12px 40px;
+  border-radius: 30px;
+  color: #674baf;
+  font-size: 0.85em;
+  box-shadow: 2px 2px 10px #272626;
+}
+@media screen and (max-width: 576px) {
+  button {
+    width: 60%;
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1em;
+}
+@media screen and (max-width: 576px) {
+  .social-icons {
+    justify-content: center;
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+  }
+}
+
+.social-icons a {
+  margin-right: 1em;
+  text-decoration: none;
+}
+@media screen and (max-width: 576px) {
+  .social-icons a {
+    margin: 0.5em;
+  }
+}
+
+.social-icons a i {
+  border: 1px solid #fff;
+  border-radius: 100%;
+  height: 16px;
+  padding: 0.5em;
+  width: 16px;
+  color: white;
+}
